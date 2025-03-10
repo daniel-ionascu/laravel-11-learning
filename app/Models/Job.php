@@ -12,4 +12,9 @@ class Job extends Model{
     protected $table = 'job_listings';
 
     protected $fillable = ['title', 'salary'];
+
+    public function employer(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(Employer::class);
+    }
 }
