@@ -23,5 +23,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Model::preventLazyLoading(true);
         Paginator::useTailwind();
+        Model::unguard();
     }
 }

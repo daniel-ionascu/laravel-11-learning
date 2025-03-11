@@ -15,5 +15,5 @@
         @endforeach
     </div>
 
-    <div>{{$jobs->links()}}</div>
+    <div class="my-4">{{$jobs->links()}}</div>
 </x-layout>
